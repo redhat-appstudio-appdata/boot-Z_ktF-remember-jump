@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-iore
+  namespace: rhit-coberle-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:85c7ab047de6f0be874b3e7c49b3d90ff23cd197109dbdea41a0a0d064b3af23
+        name: my-java-springboot
+        resources: {}
+status: {}
