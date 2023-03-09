@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-java-springboot-basic-iore
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:Z_ktF-devfile-sample-java-springboot-basic-iore
+      - image: quay.io/redhat-appstudio/user-workload@sha256:85c7ab047de6f0be874b3e7c49b3d90ff23cd197109dbdea41a0a0d064b3af23
         name: my-java-springboot
         ports:
         - containerPort: 8081
